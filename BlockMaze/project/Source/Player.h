@@ -1,4 +1,5 @@
 #pragma once
+#include "Vector2.h"
 #include "../Library/gameObject.h"
 
 class Player : public GameObject {
@@ -9,4 +10,5 @@ public:
 	void Draw() override;
 
 	int hImage;
+	VECTOR2 position;
 };

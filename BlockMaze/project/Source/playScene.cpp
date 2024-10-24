@@ -3,12 +3,12 @@
 #include "DebugScreen.h"
 #include <DxLib.h>
 #include "Stage.h"
-#include "Player.h"
 
 PlayScene::PlayScene()
 {
-	Instantiate<Stage>();
-	Instantiate<Player>();
+	Stage* s = Instantiate<Stage>();
+	//SetDrawOrder■キャラクターの表示順を指定
+	SetDrawOrder(s, 10);
 }
 
 PlayScene::~PlayScene()
